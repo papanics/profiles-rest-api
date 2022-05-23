@@ -117,3 +117,5 @@ cd /directory_name
 Change to parent directory
 
 cd ..
+
+sudo fuser -k 8000/tcp. This should kill all the processes associated with port 8000.

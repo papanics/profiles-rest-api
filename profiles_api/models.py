@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.models import BaseUserManager
 
@@ -40,7 +40,7 @@ class UserProfile(AbstractUser):
 
     objects = UserProfileManager()
 
-    USERNAME_FIELD: 'email'
+    USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name']
 
 
